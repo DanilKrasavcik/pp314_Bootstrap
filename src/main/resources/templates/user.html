@@ -36,7 +36,7 @@
             <div class="col-md-2" style="padding-left: 0px; padding-right: 0px">
                 <div class="container-fluid" style="padding-left: 0px; padding-right: 0px">
                     <ul class="nav nav-pills nav-stacked"  role="tablist">
-                        <li><a th:each="role: ${user.getRoles()}" th:if="${role.toString()}=='ADMIN'" th:href="@{/admin}">Admin</a></li>
+                        <li><a th:each="role: ${usingUser.getRoles()}" th:if="${role.toString()}=='ADMIN'" th:href="@{/admin}">Admin</a></li>
                         <li class="active"><a th:href="@{/user}">User</a></li>
                     </ul>
                 </div>
